@@ -1,0 +1,13 @@
+{
+  "folders": [
+	{
+		"path": "../.."
+	},
+	{
+		"path": "../../../../Downloads/transforms-01-rotate-and-translate"
+	}
+],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "projects"
+  }
+}

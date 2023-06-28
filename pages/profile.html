@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./profile.css" />
+    <title>Profile</title>
+  </head>
+  <body>
+    <main>
+      <section class="profile">
+        <h1>Your Profile</h1>
+        <form
+          action="./save-success.html"
+          method="GET"
+          target="_blank"
+          enctype="multipart/form-data"
+        >
+          <div>
+            <label for="username">Username:</label>
+            <input
+              type="text"
+              id="username"
+              name="username"
+              minlength="10"
+              maxlength="55"
+              required
+              value="IvoNikolov"
+              disabled
+            />
+          </div>
+          <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" disabled />
+          </div>
+          <div>
+            <label for="password">Change Password:</label>
+            <input type="password" id="password" name="password" />
+          </div>
+          <div>
+            <label for="tel">Tel:</label>
+            <input type="tel" id="tel" name="tel" />
+          </div>
+          <div>
+            <label for="url">Personal site:</label>
+            <input type="url" id="url" name="url" />
+          </div>
+          <div>
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" min="18" max="150" />
+          </div>
+          <div>
+            <label for="dot">Date:</label>
+            <input type="date" id="dot" name="dot" max="2000-05-05" />
+          </div>
+          <div>
+            <label for="theme">Theme:</label>
+            <input type="color" id="theme" name="theme" />
+          </div>
+
+          <div>
+            Terms and Conditions:
+            <label for="agree">Agree</label>
+            <input type="radio" id="agree" name="terms" value="agree" />
+            <label for="disagree">Disagree</label>
+            <input type="radio" id="disagree" name="terms" value="disagree" />
+          </div>
+
+          <div>
+            <label for="news">I want newsletter:</label>
+            <input type="checkbox" id="news" name="news" />
+          </div>
+
+          <input
+            type="hidden"
+            id="hidden"
+            name="hidden"
+            value="This is not visible for us"
+          />
+
+          <div>
+            <label for="avatar">Profile Picture:</label>
+            <input type="file" id="avatar" name="avatar" />
+          </div>
+          <div>
+            <label for="appt">Choose a time for your meeting:</label>
+
+            <input type="time" id="appt" name="appt" required />
+          </div>
+
+          <button type="reset">Reset</button>
+          <input type="submit" value="Save but input" />
+          <button type="submit">Save</button>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
